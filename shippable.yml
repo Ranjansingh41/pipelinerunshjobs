@@ -89,7 +89,7 @@ jobs:
             - cassandra -v  
             - /var/lib/neo4j/bin/neo4j version
 
-- name: u16nodall
+ - name: u16nodall
    type: runSh
    steps:
      - IN: u16all
@@ -101,7 +101,7 @@ jobs:
            script:
            - ls
            
-- name: u16pytall
+ - name: u16pytall
    type: runSh
    steps:
      - IN: u16all
@@ -113,7 +113,7 @@ jobs:
            script:
            - ls
 
-- name: u16javall
+ - name: u16javall
    type: runSh
    steps:
      - IN: u16all
