@@ -91,7 +91,7 @@ jobs:
  - name: u16all
    type: runSh
    steps:
-     - IN: u16
+     - IN: u16_test
      - TASK:
          runtime:
            options:
