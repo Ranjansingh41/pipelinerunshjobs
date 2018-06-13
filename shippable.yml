@@ -88,33 +88,11 @@ jobs:
             - mongod --version
             - cassandra -v  
             - /var/lib/neo4j/bin/neo4j version
-
- - name: pipelineu16nodall_runCI
+            
+ - name: servicesCIu16all_runCI
    type: runCI
    steps:
-    - IN: pipelineu16nodall_ciRepo
-    - IN: u16all
-    
- - name: pipelineu16javall_runCI
-   type: runCI
-   steps:
-    - IN: pipelineu16javall_ciRepo
-    - IN: u16all
-    
- - name: pipelineu16cppall_runCI
-   type: runCI
-   steps:
-    - IN: pipelineu16cppall_ciRepo
-    - IN: u16all
-  
- - name: pipelineu16php_runCI
-   type: runCI
-   steps:
-    - IN: pipelineu16php_ciRepo
+    - IN: servicesCIu16all_ciRepo
     - IN: u16all
    
- - name: pipelineu16pytall_runCI
-   type: runCI
-   steps:
-    - IN: pipelineu16pytall_ciRepo
-    -IN: u16all
+ 
