@@ -131,4 +131,21 @@ jobs:
    steps:
     - IN: pipelineu16scaall_ciRepo
     - IN: servicesCIu16all_runCI
+    
+ - name: pipelineu16ruball_runCI
+   type: runCI
+   steps:
+    - IN: pipelineu16ruball_ciRepo
+    - IN: servicesCIu16all_runCI
+    
+ - name: pipelineu16cloall_runCI
+   type: runCI
+   steps:
+     - IN: pipelineu16cloall_ciRepo
+     - IN: servicesCIu16all_runCI
  
+ - name: pipelineu16golall_runCI
+   type: runCI
+   steps:
+   - IN: pipelineu16golall_ciRepo
+   - IN: servicesCIu16all_runCI
