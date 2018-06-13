@@ -101,14 +101,14 @@ jobs:
     - IN: pipelineu16javall_ciRepo
     - IN: u16all
     
-- name: pipelineu16cppall_runCI
-  type: runCI
-  steps:
+ - name: pipelineu16cppall_runCI
+   type: runCI
+   steps:
    - IN: pipelineu16cppall_ciRepo
    - IN: u16all
   
-- name: pipelineu16php_runCI
-  type: runCI
-  steps:
+ - name: pipelineu16php_runCI
+   type: runCI
+   steps:
    - IN: pipelineu16php_ciRepo
    - IN: u16all
