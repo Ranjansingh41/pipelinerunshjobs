@@ -100,3 +100,9 @@ jobs:
    steps:
     - IN: pipelineu16javall_ciRepo
     - IN: u16all
+    
+- name: pipelineu16cppall_runCI
+  type: runCI
+  steps:
+  - IN: pipelineu16cppall_ciRepo
+  - IN: u16all
