@@ -1,4 +1,4 @@
- jobs:
+jobs:
  - name: u16
    type: runSh
    steps:
@@ -89,9 +89,9 @@
             - cassandra -v  
             - /var/lib/neo4j/bin/neo4j version
 
-- name: pipelineu16nodall_runCI
-  type: runCI
-  steps:
+ - name: pipelineu16nodall_runCI
+   type: runCI
+   steps:
     - IN: pipelineu16nodall_ciRepo
     - IN: u16all
  
