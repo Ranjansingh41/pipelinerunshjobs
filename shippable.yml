@@ -24,7 +24,6 @@ jobs:
             - gcloud version
             - git lfs version
             - kubectl version --client
-            - kops version
             - helm version --client
             - doctl version
             - ansible --version
