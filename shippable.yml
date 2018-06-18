@@ -87,6 +87,7 @@ jobs:
             - mongod --version
             - cassandra -v  
             - /var/lib/neo4j/bin/neo4j version
+            - pip show pycrypto 
             
  - name: servicesCIu16all_runCI
    type: runCI
