@@ -36,6 +36,7 @@ jobs:
             - jq --version
             - terraform --version
             - openstack --version
+            - npm --version
           
        
  - name: u16all
