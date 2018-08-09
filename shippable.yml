@@ -37,6 +37,7 @@ jobs:
             - terraform --version
             - openstack --version
             - npm --version
+            - kops version
           
        
  - name: u16all
