@@ -50,8 +50,8 @@ jobs:
              imageName: "drydock/u16all"
              imageTag: master
          script:
-            - shippable_service cassandra start
-            - shippable_service cassandra stop
+            #- shippable_service cassandra start
+            #- shippable_service cassandra stop
             - shippable_service couchdb start
             - shippable_service couchdb stop
             - shippable_service elasticsearch start
@@ -62,8 +62,8 @@ jobs:
             - shippable_service mongodb stop
             - shippable_service mysql start
             - shippable_service mysql stop
-            - shippable_service neo4j start
-            - shippable_service neo4j stop
+            #- shippable_service neo4j start
+            #- shippable_service neo4j stop
             - shippable_service postgres start
             - shippable_service postgres stop
             - shippable_service rabbitmq start
@@ -87,8 +87,8 @@ jobs:
             - dpkg -s rabbitmq-server | grep  Version
             - redis-server --version
             - mongod --version
-            - cassandra -v  
-            - /var/lib/neo4j/bin/neo4j version
+           # - cassandra -v  
+           # - /var/lib/neo4j/bin/neo4j version
             - pip show pycrypto 
             
  - name: servicesCIu16all_runCI
