@@ -50,8 +50,8 @@ jobs:
              imageName: "drydock/u16all"
              imageTag: master
          script:
-            - shippable_service cassandra start
-            - shippable_service cassandra stop
+            #- shippable_service cassandra start
+            #- shippable_service cassandra stop
             - shippable_service couchdb start
             - shippable_service couchdb stop
             - shippable_service elasticsearch start
