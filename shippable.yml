@@ -62,8 +62,8 @@ jobs:
             - shippable_service mongodb stop
             - shippable_service mysql start
             - shippable_service mysql stop
-            #- shippable_service neo4j start
-            #- shippable_service neo4j stop
+            - shippable_service neo4j start
+            - shippable_service neo4j stop
             - shippable_service postgres start
             - shippable_service postgres stop
             - shippable_service rabbitmq start
@@ -88,7 +88,7 @@ jobs:
             - redis-server --version
             - mongod --version
            # - cassandra -v  
-           # - /var/lib/neo4j/bin/neo4j version
+            - /var/lib/neo4j/bin/neo4j version
             - pip show pycrypto 
             
  - name: servicesCIu16all_runCI
