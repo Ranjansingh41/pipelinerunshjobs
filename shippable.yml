@@ -87,7 +87,8 @@ jobs:
             - dpkg -s rabbitmq-server | grep  Version
             - redis-server --version
             - mongod --version
-           # - cassandra -v  
+            - cassandra -v 
+            - /usr/lib/jvm/java-11-oracle
             - /var/lib/neo4j/bin/neo4j version
             - pip show pycrypto 
             
