@@ -38,6 +38,7 @@ jobs:
             - openstack --version
             - npm --version
             - kops version
+            - docker --version
           
        
  - name: u16all
