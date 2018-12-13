@@ -6,7 +6,7 @@ jobs:
          runtime:
            options:
              imageName: "drydock/u16"
-             imageTag: 5.11.1
+             imageTag: v5.11.1
          script:
             - apt-get update
             - java -version
