@@ -6,8 +6,9 @@ jobs:
          runtime:
            options:
              imageName: "drydock/u16"
-             imageTag: master
+             imageTag: 5.11.1
          script:
+            - apt-get update
             - java -version
             - nodejs --version
             - yarn -version
